@@ -10,8 +10,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            NavigationView {
+                List {
+                    NavigationLink(destination: Text("Image")) {
+                        Text("Images")
+                    }
+                    NavigationLink(destination: Text("Videos")) {
+                        Text("Videos")
+                    }
+                    NavigationLink(destination: Text("Live Photos")) {
+                        Text("Live Photos")
+                    }
+                }
+            }
+        }
     }
 }
 
