@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack {
             NavigationView {
                 List {
-                    NavigationLink(destination: Text("Image")) {
+                    NavigationLink(destination: ImageContentView()) {
                         Text("Images")
                     }
                     NavigationLink(destination: Text("Videos")) {
@@ -23,13 +23,19 @@ struct ContentView: View {
                         Text("Live Photos")
                     }
                 }
+                .navigationTitle("Tap to show PHPicker")
             }
+            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .preferredColorScheme(.dark)
+        }
     }
 }

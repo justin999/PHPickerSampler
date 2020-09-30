@@ -13,6 +13,8 @@
 		D0DA1F2C2523E0D300877F50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DA1F2B2523E0D300877F50 /* Preview Assets.xcassets */; };
 		D0DA1F372523E0D300877F50 /* PHPickerSamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1F362523E0D300877F50 /* PHPickerSamplerTests.swift */; };
 		D0DA1F422523E0D300877F50 /* PHPickerSamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1F412523E0D300877F50 /* PHPickerSamplerUITests.swift */; };
+		D0DA1F532523E5E200877F50 /* ImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1F522523E5E200877F50 /* ImageContentView.swift */; };
+		D0DA1FAA25252F7600877F50 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1FA925252F7600877F50 /* PhotoPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D0DA1F3D2523E0D300877F50 /* PHPickerSamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHPickerSamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DA1F412523E0D300877F50 /* PHPickerSamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerSamplerUITests.swift; sourceTree = "<group>"; };
 		D0DA1F432523E0D300877F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DA1F522523E5E200877F50 /* ImageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContentView.swift; sourceTree = "<group>"; };
+		D0DA1FA925252F7600877F50 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				D0DA1F242523E0D200877F50 /* PHPickerSamplerApp.swift */,
 				D0DA1F262523E0D200877F50 /* ContentView.swift */,
+				D0DA1F522523E5E200877F50 /* ImageContentView.swift */,
+				D0DA1FA925252F7600877F50 /* PhotoPicker.swift */,
 				D0DA1F282523E0D300877F50 /* Assets.xcassets */,
 				D0DA1F2D2523E0D300877F50 /* Info.plist */,
 				D0DA1F2A2523E0D300877F50 /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DA1FAA25252F7600877F50 /* PhotoPicker.swift in Sources */,
 				D0DA1F272523E0D200877F50 /* ContentView.swift in Sources */,
 				D0DA1F252523E0D200877F50 /* PHPickerSamplerApp.swift in Sources */,
+				D0DA1F532523E5E200877F50 /* ImageContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
