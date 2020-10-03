@@ -13,6 +13,7 @@ struct ImageContentView: View {
     
     @State private var isPresented: Bool = false
     @State private var image: UIImage?
+    @State private var showingAlert: Bool = false
     
     var body: some View {
         VStack {
@@ -26,6 +27,11 @@ struct ImageContentView: View {
             }
             .sheet(isPresented: $isPresented, onDismiss: onDismiss, content: photoPicker)
         }
+        .alert(isPresented: $showingAlert, content: {
+            Alert(title: Text("Alert here"), message: nil, dismissButton: .default(Text("close"), action: {
+                showingAlert = false
+            }))
+        })
     }
     
     func onDismiss() {
@@ -37,7 +43,7 @@ struct ImageContentView: View {
         configuration.filter = .images
         configuration.selectionLimit = 1
         configuration.preferredAssetRepresentationMode = .current
-        return PhotoPicker(configuration: configuration, isPresented: $isPresented, image: $image)
+        return PhotoPicker(configuration: configuration, isPresented: $isPresented, image: $image, showingAlert: $showingAlert)
     }
 }
 

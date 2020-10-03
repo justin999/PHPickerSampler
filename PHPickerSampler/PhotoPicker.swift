@@ -13,6 +13,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
     let configuration: PHPickerConfiguration
     @Binding var isPresented: Bool
     @Binding var image: UIImage?
+    @Binding var showingAlert: Bool
     
     func makeUIViewController(context: Context) -> PHPickerViewController {
         let controller = PHPickerViewController(configuration: configuration)
@@ -42,6 +43,7 @@ struct PhotoPicker: UIViewControllerRepresentable {
                 provider.loadObject(ofClass: UIImage.self) { [weak self] (image, error) in
                     if let error = error {
                         print("*** error: \(error)")
+                        self?.parent.showingAlert = true
                         return
                     }
                     
