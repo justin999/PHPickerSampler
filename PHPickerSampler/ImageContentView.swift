@@ -28,7 +28,7 @@ struct ImageContentView: View {
             .sheet(isPresented: $isPresented, onDismiss: onDismiss, content: photoPicker)
         }
         .alert(isPresented: $showingAlert, content: {
-            Alert(title: Text("Alert here"), message: nil, dismissButton: .default(Text("close"), action: {
+            Alert(title: Text("Error while showing error"), message: nil, dismissButton: .default(Text("close"), action: {
                 showingAlert = false
             }))
         })
