@@ -12,6 +12,8 @@ import PhotosUI
 struct PhotoPicker: UIViewControllerRepresentable {
     let configuration: PHPickerConfiguration
     @Binding var isPresented: Bool
+    @Binding var image: UIImage?
+    
     func makeUIViewController(context: Context) -> PHPickerViewController {
         let controller = PHPickerViewController(configuration: configuration)
         controller.delegate = context.coordinator
@@ -33,6 +35,21 @@ struct PhotoPicker: UIViewControllerRepresentable {
         func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
             print(results)
             parent.isPresented = false // Set isPresented to false because picking has finished.
+            if
+                let provider = results.first?.itemProvider,
+                provider.canLoadObject(ofClass: UIImage.self)
+            {
+                provider.loadObject(ofClass: UIImage.self) { [weak self] (image, error) in
+                    if let error = error {
+                        print("*** error: \(error)")
+                        return
+                    }
+                    
+                    if let image = image as? UIImage {
+                        self?.parent.image = image
+                    }
+                }
+            }
         }
     }
 }
