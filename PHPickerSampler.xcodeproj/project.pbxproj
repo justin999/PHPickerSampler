@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0D19CF325294D0B006EA18B /* VideoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D19CF225294D0B006EA18B /* VideoContentView.swift */; };
+		D0D19CF825294DEC006EA18B /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D19CF725294DEC006EA18B /* VideoPicker.swift */; };
 		D0DA1F252523E0D200877F50 /* PHPickerSamplerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1F242523E0D200877F50 /* PHPickerSamplerApp.swift */; };
 		D0DA1F272523E0D200877F50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA1F262523E0D200877F50 /* ContentView.swift */; };
 		D0DA1F292523E0D300877F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DA1F282523E0D300877F50 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0D19CF225294D0B006EA18B /* VideoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentView.swift; sourceTree = "<group>"; };
+		D0D19CF725294DEC006EA18B /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
 		D0DA1F212523E0D200877F50 /* PHPickerSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHPickerSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DA1F242523E0D200877F50 /* PHPickerSamplerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerSamplerApp.swift; sourceTree = "<group>"; };
 		D0DA1F262523E0D200877F50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +106,9 @@
 				D0DA1F242523E0D200877F50 /* PHPickerSamplerApp.swift */,
 				D0DA1F262523E0D200877F50 /* ContentView.swift */,
 				D0DA1F522523E5E200877F50 /* ImageContentView.swift */,
+				D0D19CF225294D0B006EA18B /* VideoContentView.swift */,
 				D0DA1FA925252F7600877F50 /* PhotoPicker.swift */,
+				D0D19CF725294DEC006EA18B /* VideoPicker.swift */,
 				D0DA1F282523E0D300877F50 /* Assets.xcassets */,
 				D0DA1F2D2523E0D300877F50 /* Info.plist */,
 				D0DA1F2A2523E0D300877F50 /* Preview Content */,
@@ -268,7 +274,9 @@
 				D0DA1FAA25252F7600877F50 /* PhotoPicker.swift in Sources */,
 				D0DA1F272523E0D200877F50 /* ContentView.swift in Sources */,
 				D0DA1F252523E0D200877F50 /* PHPickerSamplerApp.swift in Sources */,
+				D0D19CF825294DEC006EA18B /* VideoPicker.swift in Sources */,
 				D0DA1F532523E5E200877F50 /* ImageContentView.swift in Sources */,
+				D0D19CF325294D0B006EA18B /* VideoContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

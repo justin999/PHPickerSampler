@@ -16,7 +16,7 @@ struct ContentView: View {
                     NavigationLink(destination: ImageContentView()) {
                         Text("Images")
                     }
-                    NavigationLink(destination: Text("Videos")) {
+                    NavigationLink(destination: VideoContentView()) {
                         Text("Videos")
                     }
                     NavigationLink(destination: Text("Live Photos")) {
