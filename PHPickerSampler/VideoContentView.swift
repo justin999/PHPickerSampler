@@ -21,6 +21,9 @@ struct VideoContentView: View {
                 .fixedSize()
             
             VideoPlayer(player: player)
+                .onTapGesture {
+                    isPresented.toggle()
+                }
             
             Spacer(minLength: 20)
                 .fixedSize()

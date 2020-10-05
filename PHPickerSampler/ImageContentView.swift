@@ -21,6 +21,9 @@ struct ImageContentView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .background(Color.gray)
+                .onTapGesture {
+                    isPresented.toggle()
+                }
             
             Button("add Image") {
                 isPresented.toggle()
