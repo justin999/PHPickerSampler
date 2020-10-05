@@ -28,7 +28,7 @@ struct VideoContentView: View {
             Spacer(minLength: 20)
                 .fixedSize()
             
-            Button("set video") {
+            Button("tap to show PHPicker") {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented, content: videoPicker)

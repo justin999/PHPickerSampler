@@ -25,7 +25,7 @@ struct ImageContentView: View {
                     isPresented.toggle()
                 }
             
-            Button("add Image") {
+            Button("tap to show PHPicker") {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented, onDismiss: onDismiss, content: photoPicker)

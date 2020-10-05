@@ -19,11 +19,8 @@ struct ContentView: View {
                     NavigationLink(destination: VideoContentView()) {
                         Text("Videos")
                     }
-                    NavigationLink(destination: Text("Live Photos")) {
-                        Text("Live Photos")
-                    }
                 }
-                .navigationTitle("Tap to show PHPicker")
+                .navigationTitle("PHPickerSampler")
             }
             
         }
