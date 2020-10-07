@@ -20,10 +20,16 @@ struct VideoContentView: View {
             Spacer(minLength: 50)
                 .fixedSize()
             
-            VideoPlayer(player: player)
-                .onTapGesture {
-                    isPresented.toggle()
-                }
+            ZStack {
+                VideoPlayer(player: player)
+                
+                Rectangle()
+                    .onTapGesture {
+                        isPresented.toggle()
+                    }
+                    .foregroundColor(.black)
+                    .opacity(player != nil ? 0 : 1.0)
+            }
             
             Spacer(minLength: 20)
                 .fixedSize()
